@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mini CRM</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Client Lead Management System</h1>
+
+    <form id="leadForm">
+
+      <!-- Client Name -->
+      <input 
+        type="text"
+        id="name"
+        placeholder="Client Name"
+        value="Sravanthi"
+        required
+      >
+
+      <!-- Client Email -->
+      <input
+        type="email"
+        id="email"
+        placeholder="Client Email"
+        value="kondasravanthi18@gmail.com"
+        required
+      >
+
+      <!-- Client Message -->
+      <textarea
+        id="message"
+        placeholder="Client Message"
+      >Need a portfolio website</textarea>
+
+      <!-- Lead Status -->
+      <select id="status">
+
+        <option value="New">New</option>
+
+        <option value="Contacted">Contacted</option>
+
+        <option value="Converted">Converted</option>
+
+      </select>
+
+      <!-- Submit Button -->
+      <button type="submit">
+        Add Lead
+      </button>
+
+    </form>
+
+    <!-- Leads Display -->
+    <div id="leadList"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
